@@ -1,0 +1,16 @@
+---
+# vars file for ec2-launcher
+region: ap-south-1
+ec2_instance_type: t2.micro
+ec2_ami: ami-04125d804acca5692
+secgroup: default
+ec2_name: myec2-debian
+ec2_subnetid: subnet-03fda26b
+ec2_instname: "Child EC2 instance(Ubuntu)"
+env: develop
+#aws_access_key: AKIAYDX4H5GX2YFWIJDV
+#aws_secret_key: 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
+app_code_user: "ubuntu" # remote user
+hoststring: "ansible_ssh_user=ubuntu ansible_ssh_private_key_file=/home/ubuntu/hostdir/my-aws-private.pem ansible_python_interpreter=/usr/bin/python3"
+hostpath: "/home/ubuntu/hostdir/hosts"
+mydest: "/home/ubuntu/hostdir/my-aws-private.pem"
