@@ -1,6 +1,6 @@
 ---
 
-- name: Inlcude os-specific tasks
+- name: Include os-specific tasks
   include_vars: "{{ ansible_os_family | lower }}.yml"
 
 - name: Create an EC2 key
